@@ -24,7 +24,7 @@ class DestinationAdapter (private val users: List<User>): RecyclerView.Adapter<D
 
         fun render(user:User){
             binding.tvUserName.setText(user.username)
-            binding.tvUserNumber.setText(user.id)
+            binding.tvUserNumber.setText(user.id.toString())
 
     }
  }
